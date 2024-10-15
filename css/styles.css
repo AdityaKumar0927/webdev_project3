@@ -28,3 +28,12 @@ nav ul li a {
 nav ul li a:hover {
   color: #ff6f61;
 }
+
+main {
+  width: 960px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
