@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   background-image: url('https://raw.githubusercontent.com/AdityaKumar0927/webdev_project2/main/media/background-3.jpg');
@@ -11,12 +17,7 @@ header h1 {
   font-size: 3.5em;
   color: #ffffff;
   text-align: center;
-}
-
-header p {
-  font-size: 1.3em;
-  color: #ffffff;
-  text-align: center;
+  margin-bottom: 1rem;
 }
 
 nav ul {
@@ -46,7 +47,7 @@ nav ul li a:hover {
 }
 
 .content-box {
-  width: 80%; /* Increased size */
+  width: 80%;
   background-color: rgba(255, 255, 255, 0.9);
   padding: 2.5rem;
   margin: 2rem auto;
@@ -66,10 +67,6 @@ nav ul li a:hover {
   height: auto;
   border: 4px solid beige;
   border-radius: 10px;
-}
-
-.videos {
-  margin-top: 2rem;
 }
 
 footer {
