@@ -4,30 +4,44 @@ body {
   line-height: 1.6;
 }
 
-.home-bg, .resume-bg, .hobbies-bg {
-  background-attachment: fixed; 
+.home-bg {
+  background-image: url('https://github.com/AdityaKumar0927/webdev_project2/blob/99ac5afb3872cdc767a5e72df7521c17e7c58ee1/media/background.jpg');
   background-size: cover;
   background-position: center;
   height: 100vh;
-}
-
-.home-bg {
-  background-image: url('https://github.com/AdityaKumar0927/webdev_project2/blob/99ac5afb3872cdc767a5e72df7521c17e7c58ee1/media/background.jpg');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .resume-bg {
   background-image: url('https://github.com/AdityaKumar0927/webdev_project2/blob/99ac5afb3872cdc767a5e72df7521c17e7c58ee1/media/background-2.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .hobbies-bg {
   background-image: url('https://github.com/AdityaKumar0927/webdev_project2/blob/99ac5afb3872cdc767a5e72df7521c17e7c58ee1/media/background-3.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 nav ul {
   display: flex;
   justify-content: center;
   list-style: none;
-  background-color: rgba(51, 51, 51, 0.8); 
+  background-color: rgba(51, 51, 51, 0.8);
   padding: 1rem;
   border-radius: 10px;
 }
@@ -55,31 +69,27 @@ nav ul li a:hover {
   border-radius: 15px;
   max-width: 960px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: center;
   margin: 2rem auto;
 }
 
-ul {
-  padding-left: 1.5rem;
-  list-style-type: disc;
+.image-gallery {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
-li {
-  margin-bottom: 1rem;
-}
-
-h1, h2 {
-  color: #333;
-  margin-bottom: 1rem;
-}
-
-p {
-  margin-bottom: 1.5rem;
+.image-gallery img {
+  max-width: 200px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 footer {
   text-align: center;
   padding: 1rem;
-  background-color: rgba(51, 51, 51, 0.8); 
+  background-color: rgba(51, 51, 51, 0.8);
   color: white;
+  position: relative;
+  width: 100%;
 }
