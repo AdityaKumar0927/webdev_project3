@@ -8,8 +8,6 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  margin: 0;
-  font-family: 'Arial', sans-serif;
 }
 
 header h1 {
@@ -44,8 +42,8 @@ nav ul li a:hover {
 }
 
 .content-box {
-  width: 960px;
-  background-color: #fff;
+  width: 90%;
+  background-color: white;
   padding: 2rem;
   border-radius: 12px;
   box-shadow: 0px 4px 8px rgba(40, 67, 135, 1);
