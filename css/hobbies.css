@@ -8,8 +8,6 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  margin: 0;
-  font-family: 'Arial', sans-serif;
 }
 
 header h1 {
@@ -44,7 +42,7 @@ nav ul li a:hover {
 }
 
 .content-box {
-  width: 960px;
+  width: 85%;
   background: linear-gradient(135deg, #ffcc33, #ff6699);
   padding: 2rem;
   border-radius: 12px;
@@ -55,6 +53,7 @@ nav ul li a:hover {
 .image-gallery {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 2rem;
 }
 
 .image-gallery img {
