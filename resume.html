@@ -6,64 +6,120 @@
   <title>Resume - Aditya Kumar</title>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
-<body class="resume-bg">
-  <header class="header-content">
-    <h1>Aditya Kumar</h1>
-    <p>Email: akumar94@hawk.iit.edu | Mobile: +1-312-687-2101 | <a href="https://www.linkedin.com/in/aditya-kumar-a47460200/">LinkedIn</a> | <a href="https://github.com/DrBlake123123">GitHub</a></p>
+<body>
+  <div class="background-animation"></div>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="resume.html" class="active">Resume</a></li>
+        <li><a href="hobbies.html">Hobbies</a></li>
+      </ul>
+    </nav>
   </header>
-  <nav class="nav-container">
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="resume.html">Resume</a></li>
-      <li><a href="hobbies.html">Hobbies</a></li>
-    </ul>
-  </nav>
-  <main class="content-box">
-    <section>
-      <h2>Education</h2>
-      <p><strong>Illinois Institute of Technology</strong><br>Bachelor of Science, Computer Science (Expected May 2026)<br>Chicago, Illinois</p>
+  <main>
+    <section class="hero">
+      <h1 class="glitch" data-text="Aditya Kumar">Aditya Kumar</h1>
+      <p class="subtitle">Computer Science Student & Creative Enthusiast</p>
+      <div class="contact-info">
+        <a href="mailto:akumar94@hawk.iit.edu" class="contact-link">akumar94@hawk.iit.edu</a>
+        <a href="tel:+13126872101" class="contact-link">+1-312-687-2101</a>
+        <a href="https://www.linkedin.com/in/aditya-kumar-a47460200/" class="contact-link">LinkedIn</a>
+        <a href="https://github.com/DrBlake123123" class="contact-link">GitHub</a>
+      </div>
     </section>
-    <section>
+    <section class="education card">
+      <h2>Education</h2>
+      <div class="education-item">
+        <h3>Illinois Institute of Technology</h3>
+        <p>Bachelor of Science, Computer Science</p>
+        <p>Expected May 2026</p>
+        <p>Chicago, Illinois</p>
+      </div>
+    </section>
+    <section class="experience card">
       <h2>Experience</h2>
-      <div>
-        <p><strong>Excelerate – Data Analyst Intern</strong> (June 2023 - July 2023)</p>
+      <div class="job">
+        <h3>Excelerate – Data Analyst Intern</h3>
+        <p class="date">June 2023 - July 2023</p>
         <ul>
           <li>Analyzed marketing campaigns, boosting engagement by 20%.</li>
           <li>Developed machine learning pipelines, improving conversion rates by 25%.</li>
           <li>Created data visualizations using Power BI and Excel.</li>
         </ul>
       </div>
-      <div>
-        <p><strong>Skynet Hacks – Co-Founder</strong> (June 2022 - Present)</p>
+      <div class="job">
+        <h3>Skynet Hacks – Co-Founder</h3>
+        <p class="date">June 2022 - Present</p>
         <ul>
           <li>Organized hackathons for 350+ participants, securing CAD $53,000 in sponsorships.</li>
           <li>Led workshops on mathematical and coding concepts.</li>
         </ul>
       </div>
     </section>
-    <section>
+    <section class="projects card">
       <h2>Projects</h2>
-      <ul>
-        <li><strong>Sign Language Detection Application:</strong> Java/TensorFlow Lite app translating ASL to English (75% accuracy). <a href="https://github.com/DrBlake123123/Sign-Language-Detection-App">GitHub</a></li>
-        <li><strong>Learning Management System:</strong> Built on the PERN stack, provides question banks for exams. <a href="https://aspirants.tech">Website</a></li>
-      </ul>
+      <div class="project-item">
+        <h3>Sign Language Detection Application</h3>
+        <p>Java/TensorFlow Lite app translating ASL to English (75% accuracy).</p>
+        <a href="https://github.com/DrBlake123123/Sign-Language-Detection-App" class="project-link">GitHub</a>
+      </div>
+      <div class="project-item">
+        <h3>Learning Management System</h3>
+        <p>Built on the PERN stack, provides question banks for exams.</p>
+        <a href="https://aspirants.tech" class="project-link">Website</a>
+      </div>
     </section>
-    <section>
+    <section class="skills card">
       <h2>Programming Skills</h2>
-      <ul>
-        <li><strong>Languages:</strong> Python, Java, TypeScript</li>
-        <li><strong>Databases:</strong> MongoDB, PostgreSQL</li>
-        <li><strong>Frameworks:</strong> React, Next.js</li>
-        <li><strong>Software:</strong> Node.js, Express.js, TensorFlow Lite</li>
-      </ul>
+      <div class="skill-category">
+        <h3>Languages</h3>
+        <ul class="skill-list">
+          <li>Python</li>
+          <li>Java</li>
+          <li>TypeScript</li>
+        </ul>
+      </div>
+      <div class="skill-category">
+        <h3>Databases</h3>
+        <ul class="skill-list">
+          <li>MongoDB</li>
+          <li>PostgreSQL</li>
+        </ul>
+      </div>
+      <div class="skill-category">
+        <h3>Frameworks</h3>
+        <ul class="skill-list">
+          <li>React</li>
+          <li>Next.js</li>
+        </ul>
+      </div>
+      <div class="skill-category">
+        <h3>Software</h3>
+        <ul class="skill-list">
+          <li>Node.js</li>
+          <li>Express.js</li>
+          <li>TensorFlow Lite</li>
+        </ul>
+      </div>
     </section>
-    <section>
+    <section class="awards card">
       <h2>Honors & Awards</h2>
-      <ul>
-        <li>Silver Medal – Asian International Mathematics Olympiad (2023)</li>
-        <li>3rd Rank – IIT Guwahati Junior Code Champs (2023)</li>
-        <li>Winner – Space City Hacks (2022)</li>
+      <ul class="award-list">
+        <li>
+          <span class="award-year">2023</span>
+          <span class="award-name">Silver Medal – Asian International Mathematics Olympiad</span>
+        </li>
+        <li>
+          <span class="award-year">2023</span>
+          <span class="award-name">3rd Rank – IIT Guwahati Junior Code Champs</span>
+        </li>
+        <li>
+          <span class="award-year">2022</span>
+          <span class="award-name">Winner – Space City Hacks</span>
+        </li>
       </ul>
     </section>
   </main>
