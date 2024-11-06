@@ -50,7 +50,7 @@ header {
 }
 
 nav ul {
-  list-style: none;
+  list-style-type: none;
   padding: 0;
   margin: 0;
   overflow: hidden;
@@ -137,6 +137,66 @@ h2::after {
   padding: 4rem 2rem;
 }
 
+.glitch {
+  position: relative;
+  color: var(--primary-color);
+  font-size: 4rem;
+  letter-spacing: 0.5rem;
+  animation: glitch 1s linear infinite;
+}
+
+@keyframes glitch {
+  2%, 64% { transform: translate(2px, 0) skew(0deg); }
+  4%, 60% { transform: translate(-2px, 0) skew(0deg); }
+  62% { transform: translate(0, 0) skew(5deg); }
+}
+
+.glitch:before,
+.glitch:after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background: var(--background-color);
+  clip: rect(0, 0, 0, 0);
+}
+
+.glitch:before {
+  left: -2px;
+  text-shadow: 2px 0 var(--secondary-color);
+  animation: glitch-anim 2s infinite linear alternate-reverse;
+}
+
+.glitch:after {
+  left: 2px;
+  text-shadow: -2px 0 var(--accent-color);
+  animation: glitch-anim 3s infinite linear alternate-reverse;
+}
+
+@keyframes glitch-anim {
+  0% { clip: rect(64px, 9999px, 98px, 0); }
+  5% { clip: rect(30px, 9999px, 16px, 0); }
+  10% { clip: rect(80px, 9999px, 130px, 0); }
+  15% { clip: rect(20px, 9999px, 76px, 0); }
+  20% { clip: rect(48px, 9999px, 29px, 0); }
+  25% { clip: rect(67px, 9999px, 45px, 0); }
+  30% { clip: rect(97px, 9999px, 31px, 0); }
+  35% { clip: rect(24px, 9999px, 100px, 0); }
+  40% { clip: rect(88px, 9999px, 53px, 0); }
+  45% { clip: rect(50px, 9999px, 70px, 0); }
+  50% { clip: rect(63px, 9999px, 87px, 0); }
+  55% { clip: rect(77px, 9999px, 4px, 0); }
+  60% { clip: rect(23px, 9999px, 91px, 0); }
+  65% { clip: rect(22px, 9999px, 140px, 0); }
+  70% { clip: rect(48px, 9999px, 46px, 0); }
+  75% { clip: rect(42px, 9999px, 57px, 0); }
+  80% { clip: rect(67px, 9999px, 66px, 0); }
+  85% { clip: rect(24px, 9999px, 143px, 0); }
+  90% { clip: rect(34px, 9999px, 51px, 0); }
+  95% { clip: rect(89px, 9999px, 28px, 0); }
+  100% { clip: rect(70px, 9999px, 83px, 0); }
+}
+
 .subtitle {
   font-size: 1.5rem;
   color: var(--secondary-color);
@@ -193,7 +253,7 @@ h2::after {
 }
 
 .tool-list {
-  list-style: none;
+  list-style-type: none;
   padding: 0;
   overflow: hidden;
 }
@@ -227,8 +287,8 @@ footer {
 }
 
 @media (max-width: 768px) {
-  .hero h1 {
-    font-size: 2.5rem;
+  .glitch {
+    font-size: 3rem;
   }
 
   .subtitle {
