@@ -267,7 +267,6 @@ footer {
   margin-top: 2rem;
 }
 
-/* Color Theme Toggle */
 .dark-theme {
   --background-color: #2d3436;
   --text-color: #f7f1e3;
@@ -289,7 +288,6 @@ footer {
   background-color: #ff6f61;
 }
 
-/* Image Slider */
 .slider-wrapper {
   position: relative;
   max-width: 100%;
@@ -303,7 +301,6 @@ footer {
   display: none;
 }
 
-/* Media Query for Tablet Screens */
 @media (max-width: 768px) {
   .glitch {
     font-size: 3rem;
@@ -321,7 +318,17 @@ footer {
   }
 }
 
-/* Media Query for Mobile Screens */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
 @media (max-width: 480px) {
   header h1 {
     font-size: 2rem;
