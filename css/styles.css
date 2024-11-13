@@ -142,13 +142,12 @@ h2::after {
   color: var(--primary-color);
   font-size: 4rem;
   letter-spacing: 0.5rem;
-  animation: glitch 1s linear infinite;
+  animation: glitchOpacity 1s linear infinite;
 }
 
-@keyframes glitch {
-  2%, 64% { transform: translate(2px, 0) skew(0deg); }
-  4%, 60% { transform: translate(-2px, 0) skew(0deg); }
-  62% { transform: translate(0, 0) skew(5deg); }
+@keyframes glitchOpacity {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.8; }
 }
 
 .glitch:before,
@@ -156,26 +155,34 @@ h2::after {
   content: attr(data-text);
   position: absolute;
   top: 0;
+  left: 0;
   width: 100%;
   background: var(--background-color);
-  clip-path: inset(0 0 0 0);
+  opacity: 0.6;
 }
 
 .glitch:before {
   left: -2px;
   text-shadow: 2px 0 var(--secondary-color);
-  animation: glitch-anim 2s infinite linear alternate-reverse;
+  animation: glitchBefore 2s infinite linear alternate-reverse;
 }
 
 .glitch:after {
   left: 2px;
   text-shadow: -2px 0 var(--accent-color);
-  animation: glitch-anim 3s infinite linear alternate-reverse;
+  animation: glitchAfter 3s infinite linear alternate-reverse;
 }
 
-@keyframes glitch-anim {
-  0% { clip-path: inset(64px 0 98px 0); }
-  100% { clip-path: inset(70px 0 83px 0); }
+@keyframes glitchBefore {
+  0% { transform: translateY(-2px); opacity: 0.5; }
+  50% { transform: translateY(0px); opacity: 1; }
+  100% { transform: translateY(2px); opacity: 0.5; }
+}
+
+@keyframes glitchAfter {
+  0% { transform: translateY(2px); opacity: 0.5; }
+  50% { transform: translateY(0px); opacity: 1; }
+  100% { transform: translateY(-2px); opacity: 0.5; }
 }
 
 .subtitle {
@@ -325,7 +332,6 @@ footer {
   padding: 0;
   margin: -1px;
   overflow: hidden;
-  clip-path: inset(0 0 0 0);
   border: 0;
 }
 
